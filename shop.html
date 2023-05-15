@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fraowen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/83a6dfbe09204f9bbc33c0439f6a33d5.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <script src="./assets/js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+
+</head>
+
+
+<body ng-app="myApp">
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="mailto:nguyenhongphuong.vn1@gmail.com">nguyenhongphuong.vn1@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:0788925658">0788925658</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/PhuongNgyenHong2003" target="_blank"
+                        rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/ngphuongfat/" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/nguyenh08580261" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                FRAOWEN
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Video.html">Video</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hoidap.html">Hỏi đáp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                        data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.html">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <a id="login" class="nav-icon position-relative text-decoration-none" href="login.html">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Content -->
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <h1 class="h2 pb-4"><strong>Danh mục sản phẩm</strong></h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Shoes
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="shop.html">Adidas</a></li>
+                            <li><a class="text-decoration-none" href="shop.html">Nike</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Sandal
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Sport</a></li>
+                            <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Socks
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none" href="#">Bag</a></li>
+                            <li><a class="text-decoration-none" href="#">Sweather</a></li>
+                            <li><a class="text-decoration-none" href="#">Sunglass</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline shop-top-menu pb-3 pt-1">
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Sản phẩm</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Mới nhất</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none" href="#">FRAOWEN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <div class="d-flex">
+                            <select class="form-control">
+                                <option>Featured</option>
+                                <option>A to Z</option>
+                                <option>Item</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div ng-controller="nameCtrl" class="row">
+                    <h2 class="title text-center">Sản Phẩm Mới Nhất</h2>
+                    <div class="col-md-4" ng-repeat="product in products track by $index">
+                        <div class="product-image-wrapper card-body">
+                            <div class="single-products">
+                                <div class="productinfo text-center" >
+                                    <img src="assets/imgshoes/{{product.img}}" alt=""
+                                        class="img-prd card-img rounded-0 img-fluid" />
+                                    <div class="price-div">
+                                        <h2 class="price">{{product.money}} đ</h2>
+                                        <input type="hidden" class="productID" value="5" disabled>
+                                    </div>
+                                    <p class="content-product-h3">{{product.name}}</p>
+                                    <div class="col d-grid"><button class="btn btn-success btn-lg add-to-cart"
+                                            id="cart"><i class="fa fa-shopping-cart"></i>Thêm Giỏ Hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--features_items-->
+
+    </div>
+    </div>
+    <div div="row">
+        <ul class="pagination pagination-lg justify-content-end">
+            <li class="page-item disabled">
+                <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#"
+                    tabindex="-1">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <!-- End Content -->
+
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Nhãn Hàng</h1>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet.
+                    </p> -->
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand"
+                                data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    <!--First slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--End First slide-->
+
+                                    <!--Second slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Second slide-->
+
+                                    <!--Third slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img"
+                                                        src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Third slide-->
+
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Brands-->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo"><Strong>FRAOWEN</Strong></h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Tân Quới, Bình Tân, Vĩnh Long
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:0788925658">0788925658</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none"
+                                href="mailto:nguyenhongphuong.vn1@gmail.com">nguyenhongphuong.vn1@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light"><strong>Các sản phẩm</strong></h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
+                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
+                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light"><Strong>Thêm thông tin</Strong></h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">About Us</a></li>
+                        <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                            placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2021 Company Name
+                            | Designed by <a rel="sponsored" href="https://www.facebook.com/PhuongNgyenHong2003"
+                                target="_blank">Nguyễn Phương</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal custom fade" id="modal_cart" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Giỏ Hàng Của Bạn</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <!-- End Script -->
+
+    <script>
+        // Modal
+        var modal = document.getElementById("modal_cart");
+        var btn = document.getElementById("cart");
+        var close = document.getElementsByClassName("close")[0];
+        var close_footer = document.getElementsByClassName("close-footer")[0];
+        var order = document.getElementsByClassName("order")[0];
+
+        close_footer.onclick = function () {
+            $('#modal_cart').modal('hide');
+        }
+        btn.onclick = function () {
+            $('#modal_cart').modal('show');
+        }
+        order.onclick = function () {
+
+
+            Swal.fire({
+                title: 'Bạn Có Chắc Chắn Muốn Mua Hàng?',
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: 'Chấp Nhận',
+                denyButtonText: `Suy Nghĩ Lại`,
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    window.location.replace("");
+                    setTimeout(function () {
+                        window.location.reload(1);
+                    }, 3000);
+                } else if (result.isDenied) {
+                    Swal.fire('Tiếp Tục Mua Sắm', '', 'info')
+                }
+            })
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var add_cart = document.getElementsByClassName("add-to-cart");
+        var cart = new Array();
+        for (var i = 0; i < add_cart.length; i++) {
+            var add = add_cart[i];
+            add.addEventListener("click", function (event) {
+                var button = event.target;
+                var product = button.parentElement.parentElement;
+                var productID = product.getElementsByClassName("productID")[0].value
+                var img = product.parentElement.getElementsByClassName("img-prd")[0].src
+                var title = product.getElementsByClassName("content-product-h3")[0].innerText
+                var price = product.getElementsByClassName("price")[0].innerText
+
+                var cartItem = {
+                    productID: productID,
+                    productName: title,
+                    productPrice: price,
+                    productImg: img,
+                    productQua: 1,
+                }
+                if (localStorage.getItem('cart') == null) {
+                    localStorage.setItem('cart', '[]'); //nếu chưa thì tạo data
+                }
+
+                var old_data = JSON.parse(localStorage.getItem('cart')); //có data chuyển về json
+                var matches = $.grep(old_data, function (obj) {
+                    return obj.productID == productID;
+                })
+
+                if (matches.length) {
+                    alert("da co san pham trong gio hang")
+                    swal('Thông Báo', "Sản phẩm đã có trong giỏ hàng", "success");
+                } else {
+                    old_data.push(cartItem);
+                }
+
+                addItemToCart(title, price, img, productID)
+                updatecart();
+                localStorage.setItem("cart", JSON.stringify(old_data))
+                // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
+                $('#modal_cart').modal('show');
+            })
+        }
+
+        function addItemToCart(title, price, img, productID) {
+
+            var cartRow = document.createElement('div')
+            cartRow.classList.add('cart-row')
+            var cartItems = document.getElementsByClassName('cart-items')[0]
+            var cart_id = cartItems.getElementsByClassName('productID')
+
+            for (var i = 0; i < cart_id.length; i++) {
+                if (cart_id[i].value == productID) {
+                    alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
+                    return
+                }
+            }
+
+
+            var cartRowContents = `
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="${img}" width="100" height="100">
+                <input type="hidden" class="productID" value="${productID}" disabled>
+                <span class="cart-item-title">${title}</span>
+            </div>
+            <span class="cart-price cart-column">${price}</span>
+           
+            <div class="cart-quantity cart-column">
+                <button class="btn btn-danger" type="button">Xóa</button>
+            </div>`
+
+            cartRow.innerHTML = cartRowContents
+            cartItems.append(cartRow)
+            cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+                var button_remove = event.target
+                button_remove.parentElement.parentElement.remove()
+                var productID = cartRow.getElementsByClassName("productID")[0].value
+
+
+                var cartItem = localStorage.getItem("cart");
+                var cartData = JSON.parse(cartItem);
+
+                for (key in cartData) {
+                    if (productID === cartData[key].productID) {
+                        cartData.splice(key, 1);
+                        cart.splice(key, 1);
+                    }
+                }
+                localStorage.setItem("cart", JSON.stringify(cartData));
+                updatecart();
+            })
+
+        }
+    </script>
+    <script>
+        function updatecart() {
+
+            var cart_item = document.getElementsByClassName("cart-items")[0];
+            var cart_rows = cart_item.getElementsByClassName("cart-row");
+            console.log(cart_item.innerHTML)
+            var total = 0;
+            for (var i = 0; i < cart_rows.length; i++) {
+                var cart_row = cart_rows[i]
+                var cartPrice = cart_row.getElementsByClassName("cart-price ")[0]
+                var cartImg = cart_row.getElementsByClassName("cart-item-image")[0].src
+                var cartTitle = cart_row.getElementsByClassName("cart-item-title")[0].innerHTML
+                var cartID = cart_row.getElementsByClassName("productID")[0].value
+                var price = parseFloat(cartPrice.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
+                total = total + price
+            }
+
+            document.getElementsByClassName("cart-total-price")[0].innerText = total.toLocaleString('it-IT', { style: 'currency', currency: 'VND' });
+
+        }
+    </script>
+
+    <script>
+        var shopping = document.getElementById('shopping');
+        shopping.onclick = function () {
+            $('#modal_cart').modal('show');
+        };
+    </script>
+    <script>
+        const app = angular.module("myApp", []);
+        app.controller("nameCtrl", function ($scope, $http) {
+
+
+            $http({ method: "GET", url: "http://localhost:3000/students" })
+                .then(function (response) {
+                    $scope.products = response.data;
+                    console.log($scope.products);
+                })
+        });
+    </script>
+</body>
+
+</html>

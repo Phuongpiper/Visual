@@ -1,0 +1,36 @@
+{
+    "students": [
+      {
+        "img": "nike-air-max-97-921826-101-1.jpg",
+        "money": "200000",
+        "name": "Nike air max 97"
+      },
+      {
+        "img": "ari max 90.jpg",
+        "money": "200000",
+        "name": "Nike air max 90"
+      },
+      {
+        "img": "nike-jordan-air-nfh-cz3984-102-1.jpg",
+        "money": "200000",
+        "name": "Nike Jordan air"
+      },
+      {
+        "img": "giay-chay-bo-nam-adidas-solar-glide-5-m-gx6705-1.jpg",
+        "money": "200000",
+        "name": "Adidas solar glide"
+      },
+      {
+        "img": "giay-lifestyle-nam-nike-air-max-dawn-dm0013-101-1.jpg",
+        "money": "200000",
+        "name": "Nike air max dawn"
+      },
+      {
+        "img": "giay-tap-luyen-nam-puma-voyage-nitro-195504-04-s-1.jpg",
+        "money": "200000",
+        "name": "Puma voyage nitro"
+      }
+  
+  
+    ]
+  }

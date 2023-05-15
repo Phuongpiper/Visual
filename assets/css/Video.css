@@ -1,0 +1,28 @@
+*{
+    margin: auto;
+}
+.wrapper{
+    width: 1000px;
+    height: 500px;
+}
+.content{
+    width: 790px;
+    height: 500px;
+    background-color: brown;
+    float: left;
+    margin-right: 5px;
+}
+.right{
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+.right>a>img{
+    width: 200px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+iframe[name=page]{
+    width: 790px;
+    height: 500px;
+}
